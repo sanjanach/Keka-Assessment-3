@@ -1,0 +1,27 @@
+<div class="chat-list">
+    <div class="chat-header">
+        <span class="user-icon"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></span>
+        <span class="user-name">Sanjana Chamarthy</span>
+        <span class="users-icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+    </div>
+    
+    <div class="search-section">
+        <input type="search" name="" id="SearchBar" placeholder="Search Chat Group" #SearchBar>
+        <span class="create-group" (click)="createGroup()">+</span>
+    </div>
+
+    <div  class="chat-groups" *ngFor="let group of chatGroups" [routerLinkActive] = "['active']">
+        <a routerLink="/chats/{{group.id}}" class="group-list"><span class="group-icon" ><i class="fa fa-user-circle fa-2x user-icon" aria-hidden="true"></i>
+            <span class="group-name">{{group.name}}</span>
+            <div class="group-message">{{group.message}}</div>
+        </span></a>
+        <div class="border"></div>
+    </div>
+
+</div>
+
+<div class="select-chat">
+    
+</div>
+
+<app-chat-selected></app-chat-selected> 

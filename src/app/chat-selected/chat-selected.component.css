@@ -1,0 +1,50 @@
+.messages{
+    background-image: url('/assets/bcg.png');
+    background-color: rgb(240, 235, 227);
+    background-size: cover;
+    height: 632px;
+    width: 1150px;
+}
+
+.chat-header{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.user-icon{
+    padding-left: 3%;
+    color: rgb(207, 213, 215);  
+    height: 20px;
+    width: 20px;
+}
+
+.trash-icon{
+    color: rgb(107, 124, 133);
+    float: right;
+    cursor: pointer;
+    margin-right: 2%;
+    padding-top: 0.5%;
+}
+
+.send-message{
+    height: 65px;
+    background-color: rgb(240, 242, 245);
+}
+
+.toggle-icon{
+    padding-top: 2%;
+    cursor: pointer;
+    padding-left: 2%;
+}
+
+.send-message input[type=search] {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    height: 35px;
+    margin-left: 2%;
+    padding-left: 2%;
+    color: rgb(134, 148, 156);
+    font-weight: 500;
+    width: 90%;
+    border-radius: 6px;
+}
